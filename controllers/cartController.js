@@ -11,7 +11,7 @@ module.exports = {
             if(cart){
                 const existingProduct = cart.products.find((product) => product.cartItem.toString() === cartItem);
                 if(existingProduct){
-                    existingProduct.quantity += 1;
+                    existingProduct.quantity += quantity;
                 } else {
                     cart.products.push({cartItem, quantity});
                 }
